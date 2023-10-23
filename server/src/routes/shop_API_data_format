@@ -1,0 +1,79 @@
+//all the API routes and their outputs 
+
+//catalog
+//getAllProducts
+
+[
+    {
+        "id": 5,
+        "userID": 1,
+        "title": "Wink cushion",
+        "description": "This is a cushion.",
+        "price": "20.00",
+        "img": "xxx",
+        "created_at": 1664888131,
+        "modify_at": null,
+        "deleted": 0
+    },
+    {
+        "id": 6,
+        "userID": 1,
+        "title": "Smile cushion",
+        "description": "This is a cushion.",
+        "price": "20.00",
+        "img": "xxx",
+        "created_at": 1664888131,
+        "modify_at": null,
+        "deleted": 0
+    },
+    {
+        "id": 7,
+        "userID": 1,
+        "title": "Book",
+        "description": "This is an awesome book.",
+        "price": "12.00",
+        "img": "xxx",
+        "created_at": 1664888131,
+        "modify_at": null,
+        "deleted": 0
+    },
+    {
+        "id": 8,
+        "userID": 1,
+        "title": "Another Book",
+        "description": "This is another awesome book.",
+        "price": "12.00",
+        "img": "xxx",
+        "created_at": 1664888131,
+        "modify_at": null,
+        "deleted": 0
+    }
+]
+
+//getProductById
+{
+    "id": 7,
+    "userID": 1,
+    "title": "Book",
+    "description": "This is an awesome book.",
+    "price": "12.00",
+    "img": "xxx",
+    "created_at": 1664888131,
+    "modify_at": null,
+    "deleted": 0
+}
+//or throw a 404 and error message if product is not found
+
+
+// getAllCartItems
+[
+    {
+        "userID": 1,
+        "quantity": 1,
+        "prodID": 6,
+        "title": "Smile cushion",
+        "description": "This is a cushion.",
+        "price": "20.00",
+        "img": "xxx"
+    },//...
+]
