@@ -11,9 +11,13 @@ import {
   } from 'class-validator';
 
 
-export class bodyProdID {
-  @IsInt()
-  prodID: number;
+export class bodyMove {
+  @IsNumberString()
+  matchID: string;
+  @IsNumberString()
+  action: string;
+  @IsString()
+  username: string;
 }
 
 export class paramsProdID {
