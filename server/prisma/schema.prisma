@@ -15,6 +15,8 @@ model Match {
   selector String
   deadline  BigInt
   moves Move[]
+  created_at BigInt  @default(0)
+  modified_at BigInt  @default(0)
 }
 
 model Move {
@@ -24,4 +26,6 @@ model Move {
   timestamp  BigInt
   match    Match    @relation(fields: [matchId], references: [id])
   matchId   Int
+  created_at BigInt  @default(0)
+  modified_at BigInt @default(0)
 }

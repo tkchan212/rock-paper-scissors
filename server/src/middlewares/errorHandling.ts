@@ -1,4 +1,4 @@
-import { Controller } from "@/types/request";
+import { Controller } from "../types/request";
 export const handleError = (func: Controller): Controller => {
     return async (req, res, next) => {
         try {

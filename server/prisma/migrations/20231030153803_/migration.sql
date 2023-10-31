@@ -1,0 +1,7 @@
+-- AlterTable
+ALTER TABLE `Match` MODIFY `created_at` BIGINT NOT NULL DEFAULT 0,
+    MODIFY `modified_at` BIGINT NOT NULL DEFAULT 0;
+
+-- AlterTable
+ALTER TABLE `Move` MODIFY `created_at` BIGINT NOT NULL DEFAULT 0,
+    MODIFY `modified_at` BIGINT NOT NULL DEFAULT 0;

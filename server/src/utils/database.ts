@@ -1,0 +1,1 @@
+export const getNowInSecond = () => Math.ceil(+new Date() / 1000);
